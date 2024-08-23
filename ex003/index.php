@@ -8,11 +8,14 @@
 <body>
     <h1>Teste de tipos de primitivos</h1>
     <?php 
-    // $num = 300;
-    // echo "O valor da variável é: $num"
+    $curso = "PHP";
+    $ano = date('Y');
 
-    $vet = [4, 5, 12, 300]
-    echo = "O numero dentro do array é $vet[1]"
+    echo <<< FRASE
+    Estou estudando
+    $curso em $ano
+    FRASE;
+
     ?>
 </body>
 </html>
