@@ -9,13 +9,13 @@
 <body>
     <main>
         <?php
-            $numero_aleatorio = rand(0, 100);
+            $numero_aleatorio = mt_rand(0, 100);
             echo "<h1>Trabalhando com número aleatórios</h1>"; 
             echo "<p> Gerando número aleatório entre 0 e 100...</p>";
-            echo "<p> O valor gerado foi $numero_aleatorio </p>";    
+            echo "<p> O valor gerado foi <strong>$numero_aleatorio</strong> </p>";    
         ?>
 
-<button onclick="javascript:window.location.href='index.php'">&#x2B05;Gerar outro</button>
+<button onclick="javascript:window.location.href='index.php'">&#x1f504;Gerar outro</button>
     </main>
 </body>
 </html>
