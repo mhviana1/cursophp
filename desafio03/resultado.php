@@ -10,12 +10,14 @@
 
     <main>
         <?php
-        $real = $_GET["Numero"];
+        $real = floatval($_GET["Numero"]);
         $dolar = "5.46";
         $conversao = $real / $dolar;
+        $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
       
         echo "<h1>Conversor de Moedas v1.0</h1>";
-        echo "<p>Seus R$" . number_format($real, 2, ',', '.') . "  equivalem a  <strong>US$ " . number_format($conversao, 2, ',', '.') . "</strong></p>";
+        // echo "<p>Seus R$" . number_format($real, 2, ',', '.') . "  equivalem a  <strong>US$ " . number_format($conversao, 2, ',', '.') . "</strong></p>";
+        echo "Seus " . numfmt_format_currency($padrao, $real, "BRL") . " equivalem a ". numfmt_format_currency($padrao, $dolar, "BRL");
         echo "<p><strong>Contação fixa de R$5,46</strong> informada diretamente no código</p>";
        
         ?>
