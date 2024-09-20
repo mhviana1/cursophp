@@ -32,7 +32,7 @@
         echo "<h1>Conversor de Moedas v1.0</h1>";
         // echo "<p>Seus R$" . number_format($real, 2, ',', '.') . "  equivalem a  <strong>US$ " . number_format($conversao, 2, ',', '.') . "</strong></p>";
         echo "Seus " . numfmt_format_currency($padrao, $real, "BRL") . " equivalem a ". numfmt_format_currency($padrao, $conversao, "USD");
-        echo "<p><strong>Cotação fixa de " . numfmt_format_currency($padrao, $dolar, "BRL").  "</strong> ,informada diretamente do Banco Central do Brasil.<br> Referente a data:$data </p>";
+        echo "<p><strong>Cotação fixa de " . numfmt_format_currency($padrao, $dolar, "BRL").  "</strong>, informada diretamente do Banco Central do Brasil.<br> Referente a data:$data </p>";
        
         ?>
 
