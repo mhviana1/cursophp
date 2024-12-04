@@ -12,6 +12,9 @@
         <form action="" method="get">
             <label for="salario"> Salario (R$)</label>
             <input type="number" name="salario" min="1412">
+            <p>Considerando o salário minimo de <strong>R$ 1.412,00</strong> </p>
+            <input type="submit" value="Calcular">
+
     </main>    
 </body>
 </html>

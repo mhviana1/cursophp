@@ -19,6 +19,7 @@
             <label for="d2"> Divisor</label>
             <input type="number" name="d2" id="d2" min="1" value="<?=$divisor?>">
             <input type="submit" value="Analizar">
+            
          
         </form>
     </main>    
