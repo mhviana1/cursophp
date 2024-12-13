@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-    $salarioMinimo = 1_412.00;
+    $salarioMinimo = 1_450.00;
     $salario = $_GET["salario"] ?? 0;
     $quociente = intdiv($salario, $salarioMinimo);
     $resto = $salario % $salarioMinimo;
